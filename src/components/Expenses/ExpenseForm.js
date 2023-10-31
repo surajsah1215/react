@@ -6,7 +6,6 @@ function ExpenseForm() {
   const [date, setDate] = useState('');
 
   const handleTitleChange = (e) => {
-    console.log(e)
     setTitle(e.target.value);
   };
 
@@ -24,6 +23,10 @@ function ExpenseForm() {
     console.log('Expense Title:', title);
     console.log('Expense Amount:', amount);
     console.log('Date:', date);
+    setTitle('');
+    setAmount('');
+    setDate('');
+
   };
 
   return (
